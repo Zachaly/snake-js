@@ -64,7 +64,7 @@ function moveHead(){
     snakeFields[0] = new snakeField(x, y);
 }
 
-// returns positions and id of snake head;
+// returns positions and id of snake head
 let currentXPosition = () => snakeFields[0].positionX;
 let currentYPosition = () => snakeFields[0].positionY;
 let currentId = () => `${currentXPosition()}-${currentYPosition()}`;
@@ -97,6 +97,7 @@ function move(){
         container.classList.add("snake");
     }
 
+    // when snake is done with moving you can change direction
     blockDirectionChange = false;
     checkFruitCollision();
 }
@@ -106,7 +107,7 @@ function tryMove(){
     try{
         move();
     }
-    catch(exeption){
+    catch{
         stopMoving();
     }
 }

@@ -2,10 +2,10 @@ function getId(x, y) {
     return `${x}-${y}`;
 }
 
-let xSize = 15;
-let ySize = 15;
+const xSize = 10;
+const ySize = 10;
 
-let fieldContainer = document.getElementById("fields");
+const fieldContainer = document.getElementById("fields");
 
 for(let i = 0; i < xSize; i++){
 
